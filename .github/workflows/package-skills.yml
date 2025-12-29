@@ -27,7 +27,7 @@ jobs:
           for skill_dir in skills/*/; do
             skill_name=$(basename "$skill_dir")
             echo "Packaging $skill_name..."
-            python3 tools/scripts/package_skill.py "$skill_dir" "./dist"
+            python3 tools/package_skill.py "$skill_dir" "./dist"
           done
 
       - name: Upload artifacts
