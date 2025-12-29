@@ -21,6 +21,9 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Install dependencies
+        run: pip install -r tools/requirements.txt
+
       - name: Package skills
         run: |
           mkdir -p dist
