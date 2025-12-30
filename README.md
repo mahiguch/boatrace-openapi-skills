@@ -37,7 +37,7 @@ GitHubリポジトリのURLを使用してインストール：
 4. **From URL** を選択
 5. 以下のURLを入力：
    ```
-   https://github.com/[オーナー]/boatrace-skills/tree/main/skills/boatrace-openapi
+   https://github.com/mahiguch/boatrace-openapi-skills/tree/main/skills/boatrace-openapi
    ```
 6. **Install** をクリック
 
