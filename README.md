@@ -19,6 +19,50 @@ python skills/boatrace-openapi/scripts/fetch_boatrace.py results 2025 20251222
 python skills/boatrace-openapi/scripts/fetch_boatrace.py previews 2025 20251222
 ```
 
+詳細は [skills/boatrace-openapi/SKILL.md](skills/boatrace-openapi/SKILL.md) を参照してください。
+
+## インストール方法
+
+### Claude Code での利用
+
+Claude CodeでSKILL.mdファイルを開くと、スキルが自動的にインストールされます。
+
+#### 方法1: URLからインストール（推奨）
+
+GitHubリポジトリのURLを使用してインストール：
+
+1. Claude Code を開く
+2. 左のパネルで **Skills** タブをクリック
+3. **+ Add skill** をクリック
+4. **From URL** を選択
+5. 以下のURLを入力：
+   ```
+   https://github.com/[オーナー]/boatrace-skills/tree/main/skills/boatrace-openapi
+   ```
+6. **Install** をクリック
+
+#### 方法2: SKILL.mdファイルから直接インストール
+
+1. [skills/boatrace-openapi/SKILL.md](skills/boatrace-openapi/SKILL.md) をClaudeに送信
+2. Claude Code がスキルを自動的に認識
+3. スキルをインストール
+
+#### 方法3: 手動で .skill ファイルをインポート
+
+1. スキルをパッケージング：
+   ```bash
+   python3 tools/scripts/package_skill.py skills/boatrace-openapi ./dist
+   ```
+2. 生成された `.skill` ファイルを Claude Code にドラッグ＆ドロップ
+
+### スキル内容の確認
+
+インストール後、スキルの説明や使用方法は以下で確認できます：
+
+- **スキル説明**: [SKILL.md](skills/boatrace-openapi/SKILL.md)
+- **API仕様**: [api_specification.md](skills/boatrace-openapi/references/api_specification.md)
+- **競艇場番号一覧**: [SKILL.md の競艇場番号の対応表](skills/boatrace-openapi/SKILL.md#競艇場番号の対応表)
+
 ## ファイル構成
 
 ```
