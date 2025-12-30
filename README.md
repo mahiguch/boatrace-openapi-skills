@@ -14,9 +14,12 @@ Boatrace Open APIから以下のデータを取得します：
 
 **使用方法:**
 ```bash
-python skills/boatrace-openapi/scripts/fetch_boatrace.py programs 2025 20251222
-python skills/boatrace-openapi/scripts/fetch_boatrace.py results 2025 20251222
-python skills/boatrace-openapi/scripts/fetch_boatrace.py previews 2025 20251222
+# 競艇場4（平和島）のレース10の出走表を取得
+python skills/boatrace-openapi/scripts/fetch_boatrace.py programs 2025 20251222 --stadium 4 --race 10
+# 競艇場2（戸田）のレース4の結果を取得
+python skills/boatrace-openapi/scripts/fetch_boatrace.py results 2025 20251222  --stadium 2 --race 4
+# 競艇場1（桐生）のレース3の直前情報を取得
+python skills/boatrace-openapi/scripts/fetch_boatrace.py previews 2025 20251222 --stadium 1 --race 3
 ```
 
 詳細は [skills/boatrace-openapi/SKILL.md](skills/boatrace-openapi/SKILL.md) を参照してください。
